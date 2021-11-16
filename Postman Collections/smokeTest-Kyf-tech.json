@@ -43,7 +43,7 @@
               "pm.collectionVariables.set(\"firstName\", firstName);\r",
               "console.log(firstName);\r",
               "\r",
-              "let username = \"teachername1\" + Math.floor(Math.random() * 1000);\r",
+              "let username = \"teachername1\" + Math.floor(Math.random() * 100000);\r",
               "pm.collectionVariables.set(\"username\", username);\r",
               "console.log(username);\r",
               "\r",
@@ -328,22 +328,22 @@
   ],
   "variable": [
     {
-      "id": "13e16038-fa49-4d71-8422-cfe365e4b2f5",
+      "id": "7055a61b-e1ba-49d5-bd4b-1ae7d757359d",
       "key": "email",
       "value": ""
     },
     {
-      "id": "d784fd43-495e-4369-b5d1-e753e952b6b5",
+      "id": "3c5e9119-7158-44e4-b4a0-d09b4e8165f9",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "92002f3c-d21d-4c62-b172-02ef4f21f6cc",
+      "id": "4e7e7108-a77a-497f-9185-651a9802cc75",
       "key": "username",
       "value": ""
     },
     {
-      "id": "344b9f7f-63b9-4c0e-9566-56e5d878e1ea",
+      "id": "95754079-666f-4c74-a072-3c9d9d17a1e4",
       "key": "phone",
       "value": ""
     }
