@@ -39,11 +39,11 @@
               "pm.collectionVariables.set(\"email\", email);\r",
               "console.log(email);\r",
               "\r",
-              "let firstName = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(1, 10);\r",
+              "let firstName = Math.random().toString(36).substr(1, 10)\r",
               "pm.collectionVariables.set(\"firstName\", firstName);\r",
               "console.log(firstName);\r",
               "\r",
-              "let username = \"teachername1\" + Math.floor(Math.random() * 100000);\r",
+              "let username = \"teachername1\" + Math.floor(Math.random() * 1000);\r",
               "pm.collectionVariables.set(\"username\", username);\r",
               "console.log(username);\r",
               "\r",
@@ -73,7 +73,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"email\": \"{{email}}\",\n    \"password\": \"hoangle777\",\n    \"firstName\": \"{{firstName}}\",\n    \"lastName\": \"Le\",\n    \"birthday\": \"19-04-1990\",\n    \"phone\": \"{{phone}}\",\n    \"username\": \"{{userName}}\",\n    \"address\": \"123ThaoDien\",\n    \"postCode\": \"3134\",\n    \"state\": \"Vic\",\n    \"suburb\": \"Ringwood\",\n    \"student\": [\n        {\n            \"firstName\": \"HannahStudent\",\n            \"lastName\": \"LeStudent\",\n            \"studentPassword\": \"Hannahle77702\"\n        }\n    ]\n}"
+          "raw": "{\n    \"email\": \"{{email}}\",\n    \"password\": \"hoangle777\",\n    \"firstName\": \"{{firstName}}\",\n    \"lastName\": \"Le\",\n    \"birthday\": \"19-04-1990\",\n    \"phone\": \"{{phone}}\",\n    \"username\": \"{{username}}\",\n    \"address\": \"123ThaoDien\",\n    \"postCode\": \"3134\",\n    \"state\": \"Vic\",\n    \"suburb\": \"Ringwood\",\n    \"student\": [\n        {\n            \"firstName\": \"HannahStudent\",\n            \"lastName\": \"LeStudent\",\n            \"studentPassword\": \"Hannahle77702\"\n        }\n    ]\n}"
         },
         "url": "{{server}}/sign-up"
       },
@@ -328,22 +328,22 @@
   ],
   "variable": [
     {
-      "id": "7055a61b-e1ba-49d5-bd4b-1ae7d757359d",
+      "id": "36cf93c9-1a55-4c86-a69a-caa02fda7ec8",
       "key": "email",
       "value": ""
     },
     {
-      "id": "3c5e9119-7158-44e4-b4a0-d09b4e8165f9",
+      "id": "3ebc791e-0988-40fc-a666-a40df155522b",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "4e7e7108-a77a-497f-9185-651a9802cc75",
+      "id": "1e11a08b-9a85-4934-90b1-24a40016dd8a",
       "key": "username",
       "value": ""
     },
     {
-      "id": "95754079-666f-4c74-a072-3c9d9d17a1e4",
+      "id": "f8eaf28b-a4be-4ffe-95f6-13903141580d",
       "key": "phone",
       "value": ""
     }
