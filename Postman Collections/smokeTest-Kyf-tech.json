@@ -335,28 +335,23 @@
   ],
   "variable": [
     {
-      "id": "79ee2e7c-1f66-4efb-b3cc-3fd06407fc10",
+      "id": "1ddecfcf-a93c-4b1f-a134-f24b9ac5d068",
       "key": "email",
       "value": ""
     },
     {
-      "id": "3c999aec-ae5a-4dd9-8c4a-f28a84eba6b6",
+      "id": "3876eef5-ee7a-4bae-aa01-c8cae160af57",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "feab5203-1684-42bf-84f7-5c5a9492c7f0",
+      "id": "8d8ca313-f84c-48b6-892b-d204993de112",
       "key": "username",
       "value": ""
     },
     {
-      "id": "efe93a56-c5c8-443b-9342-9a401f5a2d1f",
+      "id": "91e727bb-15ab-4e23-9015-bf64d4694912",
       "key": "phone",
-      "value": ""
-    },
-    {
-      "id": "31388698-c93d-4765-acbd-5630bbe0c6f2",
-      "key": "postCode",
       "value": ""
     }
   ]
