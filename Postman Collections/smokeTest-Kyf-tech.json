@@ -325,5 +325,27 @@
       },
       "response": []
     }
+  ],
+  "variable": [
+    {
+      "id": "7ba9c21c-3734-4bce-97cc-fa2cdb3c0daf",
+      "key": "email",
+      "value": ""
+    },
+    {
+      "id": "8511823f-adc5-4de6-9976-89c3c4b0724c",
+      "key": "firstName",
+      "value": ""
+    },
+    {
+      "id": "977c941a-46cb-4850-9ffc-0fdbe9411835",
+      "key": "username",
+      "value": ""
+    },
+    {
+      "id": "f1e99697-e273-4c4b-afe1-efe2a23d109f",
+      "key": "phone",
+      "value": ""
+    }
   ]
 }
