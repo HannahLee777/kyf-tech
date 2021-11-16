@@ -346,28 +346,38 @@
   ],
   "variable": [
     {
-      "id": "d2555d5a-2cf8-4989-8214-a7e22c53dffb",
+      "id": "808b9a9e-91ab-4467-bdd3-a302a2eb7cdd",
       "key": "email",
       "value": ""
     },
     {
-      "id": "651e5c94-9816-4ed4-a90b-34f1552d8223",
+      "id": "564a499a-c7b0-479d-bf78-e7ccb0f7021f",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "282e99aa-b1b8-43cc-9449-9f3ea7156676",
+      "id": "20eae850-db0d-4092-b27c-7df259a9d408",
       "key": "username",
       "value": ""
     },
     {
-      "id": "8701cac2-1af3-4e88-bd9b-97446e6eb1ce",
+      "id": "e4554754-20da-489d-bf3a-ec2481bb5979",
       "key": "phone",
       "value": ""
     },
     {
-      "id": "a9e36ca7-aa51-4342-b892-4f28100ce050",
+      "id": "5e9a2673-594b-4bf7-9116-cf1c1b43f97b",
       "key": "postCode",
+      "value": ""
+    },
+    {
+      "id": "cf62d3bc-5d4b-40dc-a831-d1f108fded0b",
+      "key": "token",
+      "value": ""
+    },
+    {
+      "id": "dc0ce1ad-bb89-4187-bc7b-ef862655266c",
+      "key": "userId",
       "value": ""
     }
   ]
