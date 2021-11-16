@@ -139,7 +139,16 @@
           "script": {
             "id": "ef6bda2a-f6bc-4ce3-829a-f13200cc7a77",
             "exec": [
-              ""
+              "let response = pm.response.json();\r",
+              "let token = response.token;\r",
+              "\r",
+              "pm.collectionVariables.set(\"token\", token);\r",
+              "\r",
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "postman.setNextRequest(\"LOGIN_Step 4: Teacher Login passcode\");"
             ],
             "type": "text/javascript"
           }
@@ -149,7 +158,9 @@
           "script": {
             "id": "fd713633-0c5c-45a8-b4f2-cf5133882b0e",
             "exec": [
-              ""
+              "let passcode = 1000 + Math.floor(Math.random() * 9000);\r",
+              "pm.collectionVariables.set(\"passcode\", passcode);\r",
+              "console.log(passcode);"
             ],
             "type": "text/javascript"
           }
@@ -173,7 +184,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"userId\": \"ede74f07-8c4a-4acc-a367-8a804b32111a\",\r\n    \"passcode\": \"7777\" \r\n}   ",
+          "raw": "{\r\n    \"userId\": \"{{userId}}\",\r\n    \"passcode\": \"{{passcode}}\" \r\n}   ",
           "options": {
             "raw": {
               "language": "json"
@@ -335,27 +346,27 @@
   ],
   "variable": [
     {
-      "id": "96f200ed-c5e2-4df2-b168-bf602116bab1",
+      "id": "d2555d5a-2cf8-4989-8214-a7e22c53dffb",
       "key": "email",
       "value": ""
     },
     {
-      "id": "c643b3af-972a-422b-b3a3-d650ff790ccf",
+      "id": "651e5c94-9816-4ed4-a90b-34f1552d8223",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "8b184d9f-9033-48a9-ad7a-b1c040539242",
+      "id": "282e99aa-b1b8-43cc-9449-9f3ea7156676",
       "key": "username",
       "value": ""
     },
     {
-      "id": "6ca529cb-1112-43d1-96e4-e837e2ae880c",
+      "id": "8701cac2-1af3-4e88-bd9b-97446e6eb1ce",
       "key": "phone",
       "value": ""
     },
     {
-      "id": "330cfa51-eb16-4364-bf63-181d72d0c818",
+      "id": "a9e36ca7-aa51-4342-b892-4f28100ce050",
       "key": "postCode",
       "value": ""
     }
