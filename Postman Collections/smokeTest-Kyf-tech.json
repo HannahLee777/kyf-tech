@@ -39,7 +39,7 @@
               "pm.collectionVariables.set(\"email\", email);\r",
               "console.log(email);\r",
               "\r",
-              "let firstName = Math.random().toString(36).substr(2, 8);\r",
+              "let firstName = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(1, 10);\r",
               "pm.collectionVariables.set(\"firstName\", firstName);\r",
               "console.log(firstName);\r",
               "\r",
@@ -328,22 +328,22 @@
   ],
   "variable": [
     {
-      "id": "7ba9c21c-3734-4bce-97cc-fa2cdb3c0daf",
+      "id": "13e16038-fa49-4d71-8422-cfe365e4b2f5",
       "key": "email",
       "value": ""
     },
     {
-      "id": "8511823f-adc5-4de6-9976-89c3c4b0724c",
+      "id": "d784fd43-495e-4369-b5d1-e753e952b6b5",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "977c941a-46cb-4850-9ffc-0fdbe9411835",
+      "id": "92002f3c-d21d-4c62-b172-02ef4f21f6cc",
       "key": "username",
       "value": ""
     },
     {
-      "id": "f1e99697-e273-4c4b-afe1-efe2a23d109f",
+      "id": "344b9f7f-63b9-4c0e-9566-56e5d878e1ea",
       "key": "phone",
       "value": ""
     }
