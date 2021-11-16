@@ -13,7 +13,19 @@
           "script": {
             "id": "bf2f21ca-a5ed-44bb-8db2-63cc3236bb61",
             "exec": [
-              ""
+              "let email = pm.variables.get(\"email\");\r",
+              "\r",
+              "let username = pm.variables.get(\"username\");\r",
+              "\r",
+              "let phone = pm.variables.get(\"phone\");\r",
+              "\r",
+              "let firstName = pm.variables.get(\"firstName\");\r",
+              "\r",
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "postman.setNextRequest(\"USER_Step 2 - Teacher Login email\");"
             ],
             "type": "text/javascript"
           }
@@ -23,13 +35,31 @@
           "script": {
             "id": "48ad7f6e-3b6a-4f65-b7bb-86cab0d9af1d",
             "exec": [
+              "let email = \"Hannah\" + Math.floor(Math.random() * 1000) + \"@gmail.com\";\r",
+              "pm.collectionVariables.set(\"email\", email);\r",
+              "console.log(email);\r",
+              "\r",
+              "let firstName = Math.random().toString(36).substr(8, length);\r",
+              "pm.collectionVariables.set(\"firstName\", firstName);\r",
+              "console.log(firstName);\r",
+              "\r",
+              "let username = \"teachername1\" + Math.floor(Math.random() * 1000);\r",
+              "pm.collectionVariables.set(\"username\", username);\r",
+              "console.log(username);\r",
+              "\r",
+              "let phone = \"0403\" + Math.floor(Math.random() * 1000000);\r",
+              "pm.collectionVariables.set(\"phone\", phone);\r",
+              "console.log(phone);\r",
+              "\r",
+              "postman.setNextRequest(\"USER_Step 2 - Teacher Login email\");\r",
+              "\r",
               ""
             ],
             "type": "text/javascript"
           }
         }
       ],
-      "_postman_id": "04b7a9aa-7959-4283-ab51-1036d75c72da",
+      "id": "04b7a9aa-7959-4283-ab51-1036d75c72da",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -43,12 +73,9 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"email\": \"hoangle05@gmail.com\",\n    \"password\": \"hoangle777\",\n    \"firstName\": \"Hoang\",\n    \"lastName\": \"Le\",\n    \"birthday\": \"19-04-1990\",\n    \"phone\": \"0945206123\",\n    \"username\": \"HoangLe05\",\n    \"address\": \"123ThaoDien\",\n    \"postCode\": \"3134\",\n    \"state\": \"Vic\",\n    \"suburb\": \"Ringwood\",\n    \"student\": [\n        {\n            \"firstName\": \"HoangStudent\",\n            \"lastName\": \"LeStudent\",\n            \"studentPassword\": \"hoangle77702\"\n        }\n    ]\n}",
-          "options": {
-            "raw": {}
-          }
+          "raw": "{\n    \"email\": \"{{email}}\",\n    \"password\": \"hoangle777\",\n    \"firstName\": \"{{firstName}}\",\n    \"lastName\": \"Le\",\n    \"birthday\": \"19-04-1990\",\n    \"phone\": \"{{phone}}\",\n    \"username\": \"{{userName}}\",\n    \"address\": \"123ThaoDien\",\n    \"postCode\": \"3134\",\n    \"state\": \"Vic\",\n    \"suburb\": \"Ringwood\",\n    \"student\": [\n        {\n            \"firstName\": \"HannahStudent\",\n            \"lastName\": \"LeStudent\",\n            \"studentPassword\": \"Hannahle77702\"\n        }\n    ]\n}"
         },
-        "url": "http://api.kyf-tech.com:8000/sign-up"
+        "url": "{{server}}/sign-up"
       },
       "response": []
     },
@@ -76,7 +103,7 @@
           }
         }
       ],
-      "_postman_id": "370cf07d-66c7-44f2-802c-18a4ced19bc4",
+      "id": "370cf07d-66c7-44f2-802c-18a4ced19bc4",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -90,10 +117,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"id\": \"hoangle05@gmail.com\",\n    \"type\": \"EMAIL\",\n    \"password\": \"hoangle777new4\",\n    \"role\": \"TEACHER\",\n    \"deviceId\": \"12345\"\n}",
-          "options": {
-            "raw": {}
-          }
+          "raw": "{\n    \"id\": \"hoangle05@gmail.com\",\n    \"type\": \"EMAIL\",\n    \"password\": \"hoangle777new4\",\n    \"role\": \"TEACHER\",\n    \"deviceId\": \"12345\"\n}"
         },
         "url": "{{server}}/login",
         "description": "Login email successfully\n-- \n\nCase 1: \n+ \"id\" is a valid email\n+ other keys are valid values\n- Expected Behavior: 400 Bad Request"
@@ -124,7 +148,7 @@
           }
         }
       ],
-      "_postman_id": "0707632b-9f2b-4f05-8e4f-7850a4cedcfd",
+      "id": "0707632b-9f2b-4f05-8e4f-7850a4cedcfd",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -178,7 +202,7 @@
           }
         }
       ],
-      "_postman_id": "85dd608a-b5fe-4c74-b5af-38db20c17408",
+      "id": "85dd608a-b5fe-4c74-b5af-38db20c17408",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -196,10 +220,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"userId\": \"ede74f07-8c4a-4acc-a367-8a804b32111a\",\n    \"passcode\": \"7777\"\n}",
-          "options": {
-            "raw": {}
-          }
+          "raw": "{\n    \"userId\": \"ede74f07-8c4a-4acc-a367-8a804b32111a\",\n    \"passcode\": \"7777\"\n}"
         },
         "url": "http://api.kyf-tech.com:8000/verify-code",
         "description": "Login passcode successfully\n--\n\nExpected Behavior: 200 OK"
@@ -230,7 +251,7 @@
           }
         }
       ],
-      "_postman_id": "ccb44ea1-70ab-43dc-a9d0-934d4a756a49",
+      "id": "ccb44ea1-70ab-43dc-a9d0-934d4a756a49",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -248,10 +269,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"firstName\": \"YUIEHAI\",\n    \"lastName\": \"NguyenHAI\",\n    \"username\": \"NguyenLe8679HAI\",\n    \"birthday\": \"20-10-1990\",\n    \"password\": \"NguyennnnHai\"\n}",
-          "options": {
-            "raw": {}
-          }
+          "raw": "{\n    \"firstName\": \"YUIEHAI\",\n    \"lastName\": \"NguyenHAI\",\n    \"username\": \"NguyenLe8679HAI\",\n    \"birthday\": \"20-10-1990\",\n    \"password\": \"NguyennnnHai\"\n}"
         },
         "url": "http://api.kyf-tech.com:8000/add-student/ede74f07-8c4a-4acc-a367-8a804b32111a",
         "description": "Login passcode successfully\n--\n\nExpected Behavior: 200 OK"
@@ -282,7 +300,7 @@
           }
         }
       ],
-      "_postman_id": "2c4ce487-4756-499b-9f7e-6193bd574d42",
+      "id": "2c4ce487-4756-499b-9f7e-6193bd574d42",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -300,10 +318,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "",
-          "options": {
-            "raw": {}
-          }
+          "raw": ""
         },
         "url": "http://api.kyf-tech.com:8000/student/2ac354f0-5313-4b54-b6ec-619215f49101",
         "description": "Login passcode successfully\n--\n\nExpected Behavior: 200 OK"
