@@ -21,6 +21,8 @@
               "\r",
               "let firstName = pm.variables.get(\"firstName\");\r",
               "\r",
+              "let postCode = pm.variables.get(\"postCode\");\r",
+              "\r",
               "pm.test(\"Status code is 200\", function () {\r",
               "    pm.response.to.have.status(200);\r",
               "});\r",
@@ -51,6 +53,11 @@
               "pm.collectionVariables.set(\"phone\", phone);\r",
               "console.log(phone);\r",
               "\r",
+              "let postCode = Math.floor(Math.random() * 10000);\r",
+              "pm.collectionVariables.set(\"postCode\", postCode);\r",
+              "console.log(postCode);\r",
+              "\r",
+              "\r",
               "postman.setNextRequest(\"USER_Step 2 - Teacher Login email\");\r",
               "\r",
               ""
@@ -73,7 +80,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"email\": \"{{email}}\",\n    \"password\": \"hoangle777\",\n    \"firstName\": \"{{firstName}}\",\n    \"lastName\": \"Le\",\n    \"birthday\": \"19-04-1990\",\n    \"phone\": \"{{phone}}\",\n    \"username\": \"{{username}}\",\n    \"address\": \"123ThaoDien\",\n    \"postCode\": \"3134\",\n    \"state\": \"Vic\",\n    \"suburb\": \"Ringwood\",\n    \"student\": [\n        {\n            \"firstName\": \"HannahStudent\",\n            \"lastName\": \"LeStudent\",\n            \"studentPassword\": \"Hannahle77702\"\n        }\n    ]\n}"
+          "raw": "{\n    \"email\": \"{{email}}\",\n    \"password\": \"hoangle777\",\n    \"firstName\": \"{{firstName}}\",\n    \"lastName\": \"Le\",\n    \"birthday\": \"19-04-1990\",\n    \"phone\": \"{{phone}}\",\n    \"username\": \"{{username}}\",\n    \"address\": \"123ThaoDien\",\n    \"postCode\": \"{{postCode}}\",\n    \"state\": \"Vic\",\n    \"suburb\": \"Ringwood\",\n    \"student\": [\n        {\n            \"firstName\": \"HannahStudent\",\n            \"lastName\": \"LeStudent\",\n            \"studentPassword\": \"Hannahle77702\"\n        }\n    ]\n}"
         },
         "url": "{{server}}/sign-up"
       },
@@ -328,22 +335,22 @@
   ],
   "variable": [
     {
-      "id": "60de27bf-2489-4b74-bd24-1424ae930220",
+      "id": "226113e9-8371-4bc7-a7ab-3102efc567ac",
       "key": "email",
       "value": ""
     },
     {
-      "id": "d5d1f7fc-e35f-44d7-a9ae-c85b0c4ab7aa",
+      "id": "26c62ab6-bb84-4546-a071-36938f5b2a16",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "25fcbde5-e200-4aa7-8223-0f19d785eb2e",
+      "id": "c5361ab7-f678-411c-8162-897d7bd5fd6d",
       "key": "username",
       "value": ""
     },
     {
-      "id": "ffc15769-4775-4459-8be9-3f3c2fd454cf",
+      "id": "5ec5a6d5-5e6f-49f7-bfe2-eed5054a86fb",
       "key": "phone",
       "value": ""
     }
