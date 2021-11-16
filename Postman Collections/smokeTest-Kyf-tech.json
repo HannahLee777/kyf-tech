@@ -39,7 +39,7 @@
               "pm.collectionVariables.set(\"email\", email);\r",
               "console.log(email);\r",
               "\r",
-              "let firstName = Math.random().toString(36).substr(8, length);\r",
+              "let firstName = Math.random().toString(36).substr(2, length);\r",
               "pm.collectionVariables.set(\"firstName\", firstName);\r",
               "console.log(firstName);\r",
               "\r",
