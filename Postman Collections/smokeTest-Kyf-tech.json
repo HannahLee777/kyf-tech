@@ -311,7 +311,7 @@
           "mode": "raw",
           "raw": "{\n    \"username\": \"{{student_username}}\",\n    \"firstName\": \"hannah\",\n    \"lastName\": \"nguyen\",\n    \"birthday\": \"02-10-2000\",\n    \"password\": \"{{student_password}}\"\n}"
         },
-        "url": "{{server}}/add-student/ede74f07-8c4a-4acc-a367-8a804b32111a",
+        "url": "{{server}}/add-student/{{userId}}",
         "description": "Login passcode successfully\n--\n\nExpected Behavior: 200 OK"
       },
       "response": []
@@ -368,52 +368,52 @@
   ],
   "variable": [
     {
-      "id": "706aba4e-80c9-4e2b-bb1b-6e7571695bb3",
+      "id": "7d8a0ab4-def2-4713-9595-70a061c6e636",
       "key": "email",
       "value": ""
     },
     {
-      "id": "7a7171d5-54b7-437f-96c2-f9098d81dd40",
+      "id": "42fe77b0-5fa0-46ec-a847-6237eb69ad0e",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "388be713-0a8c-4db9-8ae3-1981d789ede0",
+      "id": "add8b5d6-2b55-400c-adb1-3bb22c32cf57",
       "key": "username",
       "value": ""
     },
     {
-      "id": "c631a28b-5e0d-42d0-90db-b3a8b5c10cd3",
+      "id": "67e2d0b7-8bd7-4c2d-a806-721f291c4ab3",
       "key": "phone",
       "value": ""
     },
     {
-      "id": "2ceddf9e-5f06-491b-a59c-a52c0b38feed",
+      "id": "f116a193-f532-4f4a-8e04-244e4e181bb3",
       "key": "postCode",
       "value": ""
     },
     {
-      "id": "e745c95e-f19c-4c06-ba77-b93e7d53cb0d",
+      "id": "6b1f2d0b-ad92-4969-98a4-a7ec89f48feb",
       "key": "token",
       "value": ""
     },
     {
-      "id": "68e4dc00-b443-4d83-bc07-1f80a7d06837",
+      "id": "9b792ddb-646c-4e4b-8eae-e55c0e49093a",
       "key": "userId",
       "value": ""
     },
     {
-      "id": "717f2443-1856-47e9-b2e3-b43146da2ae2",
+      "id": "59edaa46-e326-4c1b-9db2-9eb62f186b19",
       "key": "passcode",
       "value": ""
     },
     {
-      "id": "6b55f3db-67bb-47d4-8bf7-0dc22b4ff4cc",
+      "id": "74339b38-745c-4ed0-a9ee-490f17aaa1be",
       "key": "student_username",
       "value": ""
     },
     {
-      "id": "9856baae-1dcf-486e-b655-25a43ef734fb",
+      "id": "ee1cf81c-ad4c-48bf-9998-4c39c676e903",
       "key": "student_password",
       "value": ""
     }
