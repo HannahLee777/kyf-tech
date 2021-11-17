@@ -226,7 +226,7 @@
               "    pm.response.to.have.status(200);\r",
               "});\r",
               "\r",
-              "postman.setNextRequest(\"LOGIN_Step 4: Teacher Login passcode\");"
+              "postman.setNextRequest(\"USER_Step 5: Teacher Add Student\");"
             ],
             "type": "text/javascript"
           }
@@ -370,52 +370,52 @@
   ],
   "variable": [
     {
-      "id": "ebcd003f-5063-4e33-8c67-56e6f0b791a3",
+      "id": "8630604f-48a1-414a-bbe1-33a33590f290",
       "key": "email",
       "value": ""
     },
     {
-      "id": "17e511c3-c1bc-488c-b07e-62a782d1b64b",
+      "id": "c7125574-58b6-4e99-897a-c90e28117027",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "25e26663-531c-410b-9e38-706488bea3d7",
+      "id": "7efe55a6-1e01-4fad-baf4-adca27b801a3",
       "key": "username",
       "value": ""
     },
     {
-      "id": "50337267-1255-4573-ac3f-1ba678bd3aad",
+      "id": "0f3095a4-942d-40e5-bf1e-ca9390b4bb59",
       "key": "phone",
       "value": ""
     },
     {
-      "id": "254d2985-8919-4bbd-a2b5-c001b8e69786",
+      "id": "bfe302b2-02aa-4dff-ac66-677dae042c44",
       "key": "postCode",
       "value": ""
     },
     {
-      "id": "801e62c0-ce20-424f-9119-d0284f14c41e",
+      "id": "1f6d02a8-8d76-496d-8193-575e3646f4b0",
       "key": "token",
       "value": ""
     },
     {
-      "id": "7f9db241-35e4-4efe-8cea-a571fb1fec9c",
+      "id": "1eed469f-6a4b-4081-b845-6f7286f140ec",
       "key": "userId",
       "value": ""
     },
     {
-      "id": "5b05a48a-28d3-494b-a8f5-1bfcf570a13c",
+      "id": "7fee157a-c343-442a-85da-71c2c5fa5deb",
       "key": "passcode",
       "value": ""
     },
     {
-      "id": "969c15b6-8c28-4027-9941-351c000b178c",
+      "id": "cbaa756a-3526-445d-ae14-dc73f941baba",
       "key": "student_username",
       "value": ""
     },
     {
-      "id": "8faf181f-b33f-488c-995d-4de6d7630f62",
+      "id": "ac59f6b8-4a3f-4599-8b68-21e0936854c9",
       "key": "student_password",
       "value": ""
     }
