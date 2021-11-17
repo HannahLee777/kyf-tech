@@ -141,6 +141,7 @@
             "exec": [
               "let response = pm.response.json();\r",
               "let token = response.token;\r",
+              "console.log(token);\r",
               "\r",
               "pm.collectionVariables.set(\"token\", token);\r",
               "\r",
@@ -175,7 +176,7 @@
         "header": [
           {
             "key": "Authorization",
-            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJlZGU3NGYwNy04YzRhLTRhY2MtYTM2Ny04YTgwNGIzMjExMWEiLCJ0eXBlIjoiVEVBQ0hFUiIsImNsYXNzSWQiOiIxNTY5ZDY4NC1jYTI2LTQ5YzktODc0My04ODE1YWEyNDY0OGUiLCJ1c2VybmFtZSI6IkhvYW5nTGUwNSIsImVtYWlsIjoiaG9hbmdsZTA1QGdtYWlsLmNvbSIsInRva2VuVHlwZSI6IkxPR0lOIiwiZGV2aWNlSWQiOiIxMjM0NSIsImlhdCI6MTYzMjU2MzM1N30.q36B71JSbfReAqds8roy2MSkXZi3Kk6eDMQ7mbBOkfU"
+            "value": "Bearer {{token}}"
           },
           {
             "key": "Content-Type",
@@ -346,42 +347,42 @@
   ],
   "variable": [
     {
-      "id": "7f6a9e49-9ac2-47a1-a5e2-63d3451a97e9",
+      "id": "e45d938c-8e80-4b54-a65f-ece0336979a2",
       "key": "email",
       "value": ""
     },
     {
-      "id": "885c49c3-4609-4b37-ad0a-01d5d001e696",
+      "id": "61c945c4-92af-489c-99da-a8de1092fc32",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "b687598b-3e32-4865-8331-c8046918ff0f",
+      "id": "6081480c-f4a7-44c1-a552-d5c870e977e4",
       "key": "username",
       "value": ""
     },
     {
-      "id": "a4797fb3-56ac-4024-8481-13c5765751f2",
+      "id": "3ffba713-11a0-4760-b54b-07700ee87fa6",
       "key": "phone",
       "value": ""
     },
     {
-      "id": "35386b34-13b7-43b9-a97a-2cf41307b046",
+      "id": "b37ae054-918b-4ab1-9cfc-a25a39bf9cf7",
       "key": "postCode",
       "value": ""
     },
     {
-      "id": "f01ac79b-b1a6-4b0a-ac3c-f2ef189f0a71",
+      "id": "53da3962-f2bb-4993-9fb2-690344f0a465",
       "key": "token",
       "value": ""
     },
     {
-      "id": "75372f71-001a-4651-94d9-cfe705a60a2a",
+      "id": "d061f26a-4c33-4140-a1b9-016785cce668",
       "key": "userId",
       "value": ""
     },
     {
-      "id": "b1cd548d-83ef-425b-b66b-f74cd9657754",
+      "id": "849c2097-a248-4415-830f-1f4f112d82eb",
       "key": "passcode",
       "value": ""
     }
