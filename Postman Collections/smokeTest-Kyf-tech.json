@@ -205,7 +205,8 @@
           "script": {
             "id": "041a3fca-ff7a-4715-ba73-d3bb0a6e676a",
             "exec": [
-              ""
+              "pm.collectionVariables.get(\"userId\");\r",
+              "pm.collectionVariables.get(\"passcode\");"
             ],
             "type": "text/javascript"
           }
@@ -215,7 +216,17 @@
           "script": {
             "id": "17bfa56e-cd5b-42cf-bd7b-a54a1c4603d9",
             "exec": [
-              ""
+              "let response = pm.response.json();\r",
+              "let token = response.token;\r",
+              "console.log(token);\r",
+              "\r",
+              "pm.collectionVariables.set(\"token\", token);\r",
+              "\r",
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "postman.setNextRequest(\"LOGIN_Step 4: Teacher Login passcode\");"
             ],
             "type": "text/javascript"
           }
@@ -239,9 +250,9 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"userId\": \"ede74f07-8c4a-4acc-a367-8a804b32111a\",\n    \"passcode\": \"7777\"\n}"
+          "raw": "{\n    \"userId\": \"{{userId}}\",\n    \"passcode\": \"{{passcode}}\"\n}"
         },
-        "url": "http://api.kyf-tech.com:8000/verify-code",
+        "url": "{{server}}/verify-code",
         "description": "Login passcode successfully\n--\n\nExpected Behavior: 200 OK"
       },
       "response": []
@@ -347,42 +358,42 @@
   ],
   "variable": [
     {
-      "id": "e45d938c-8e80-4b54-a65f-ece0336979a2",
+      "id": "b0cc1e7b-7cb6-44ff-a53e-71a628f0c046",
       "key": "email",
       "value": ""
     },
     {
-      "id": "61c945c4-92af-489c-99da-a8de1092fc32",
+      "id": "00526f3d-b2f0-4af2-9f29-1836f9135082",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "6081480c-f4a7-44c1-a552-d5c870e977e4",
+      "id": "6800d525-d34d-401d-a4ff-25be3d158cc9",
       "key": "username",
       "value": ""
     },
     {
-      "id": "3ffba713-11a0-4760-b54b-07700ee87fa6",
+      "id": "76b7adef-32e3-4540-b140-b10ce3f34dc7",
       "key": "phone",
       "value": ""
     },
     {
-      "id": "b37ae054-918b-4ab1-9cfc-a25a39bf9cf7",
+      "id": "2eafc8d2-68cc-4660-a3e4-dca5153e316d",
       "key": "postCode",
       "value": ""
     },
     {
-      "id": "53da3962-f2bb-4993-9fb2-690344f0a465",
+      "id": "9aff73cb-2f29-46f6-891f-bdb0c7450e60",
       "key": "token",
       "value": ""
     },
     {
-      "id": "d061f26a-4c33-4140-a1b9-016785cce668",
+      "id": "3fe6fa37-a7b7-4120-91fe-7254b85ca573",
       "key": "userId",
       "value": ""
     },
     {
-      "id": "849c2097-a248-4415-830f-1f4f112d82eb",
+      "id": "2bc5fa31-3575-46c2-9b1c-86f4cf1cfbd6",
       "key": "passcode",
       "value": ""
     }
