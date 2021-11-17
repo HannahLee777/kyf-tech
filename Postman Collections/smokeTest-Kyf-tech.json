@@ -241,7 +241,7 @@
         "header": [
           {
             "key": "Authorization",
-            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJlZGU3NGYwNy04YzRhLTRhY2MtYTM2Ny04YTgwNGIzMjExMWEiLCJ0eXBlIjoiVEVBQ0hFUiIsImNsYXNzSWQiOiIxNTY5ZDY4NC1jYTI2LTQ5YzktODc0My04ODE1YWEyNDY0OGUiLCJ1c2VybmFtZSI6IkhvYW5nTGUwNSIsImVtYWlsIjoiaG9hbmdsZTA1QGdtYWlsLmNvbSIsInRva2VuVHlwZSI6IlBBU1NDT0RFIiwiZGV2aWNlSWQiOiIxMjM0NSIsImlhdCI6MTYzMjU2MzUyMn0.jLof895eWKDRu210COeKUVj0oMyRh-2J7ZLBoU6-2I8"
+            "value": "Bearer {{token}}"
           },
           {
             "key": "Content-Type",
@@ -358,42 +358,42 @@
   ],
   "variable": [
     {
-      "id": "b0cc1e7b-7cb6-44ff-a53e-71a628f0c046",
+      "id": "acc6d98e-8c4b-4085-9c51-0bf82de5c29c",
       "key": "email",
       "value": ""
     },
     {
-      "id": "00526f3d-b2f0-4af2-9f29-1836f9135082",
+      "id": "3604cf21-dae6-4296-9868-f46e3eb568cd",
       "key": "firstName",
       "value": ""
     },
     {
-      "id": "6800d525-d34d-401d-a4ff-25be3d158cc9",
+      "id": "112a8fbf-dcee-426f-8160-0c001a500a08",
       "key": "username",
       "value": ""
     },
     {
-      "id": "76b7adef-32e3-4540-b140-b10ce3f34dc7",
+      "id": "f53098c2-040d-4561-b18f-bb78c2a9df25",
       "key": "phone",
       "value": ""
     },
     {
-      "id": "2eafc8d2-68cc-4660-a3e4-dca5153e316d",
+      "id": "a348e269-d1b8-4173-8ba1-15f7a65f9775",
       "key": "postCode",
       "value": ""
     },
     {
-      "id": "9aff73cb-2f29-46f6-891f-bdb0c7450e60",
+      "id": "725e44dd-1a1e-40aa-a034-2e3f0a5463b5",
       "key": "token",
       "value": ""
     },
     {
-      "id": "3fe6fa37-a7b7-4120-91fe-7254b85ca573",
+      "id": "90141db6-fbb0-4863-8284-e97151e67dd7",
       "key": "userId",
       "value": ""
     },
     {
-      "id": "2bc5fa31-3575-46c2-9b1c-86f4cf1cfbd6",
+      "id": "7494c1cd-203f-4437-9208-e98318241a85",
       "key": "passcode",
       "value": ""
     }
